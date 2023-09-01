@@ -5,7 +5,6 @@ import n.w.RepoDetailsAPI.exception.UserNotFoundException;
 import n.w.RepoDetailsAPI.integration.github.response.BranchInfo;
 import n.w.RepoDetailsAPI.integration.github.response.RepoInfo;
 import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -18,7 +17,7 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 
 @Service
-class GithubApiClientImpl implements GithubApiClient {
+public class GithubApiClientImpl implements GithubApiClient {
 
     private static final String GITHUB_API_URL = "https://api.github.com";
 
